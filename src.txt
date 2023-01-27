@@ -1,0 +1,5 @@
+color codes:
+bg:#031728
+hlt:#66FCF1
+btn:#66FCF1
+card:#041C2D

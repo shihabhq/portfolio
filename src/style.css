@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+
+.nav-button {
+    @apply px-8 py-2 rounded-full mx-3 transition-all duration-200 font-medium
+}
+
+.hero-button {
+    @apply mt-6 px-10 rounded-full font-medium py-4 bg-green-500 mr-8 transition-all duration-200
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
