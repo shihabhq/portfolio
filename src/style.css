@@ -6,8 +6,47 @@
     @apply px-8 py-2 rounded-full mx-3 transition-all duration-200 font-medium
 }
 
+.side-button {
+    @apply w-2/3 py-2 rounded-full mx-3 transition-all duration-200 font-medium
+}
+
 .hero-button {
     @apply mt-6 px-10 rounded-full font-medium py-4 bg-green-500 mr-8 transition-all duration-200
+}
+
+.hero-icons {
+    @apply mt-6 px-4 py-4 text-[30px] transition-all duration-150 rounded-full border-2 cursor-pointer border-white
+}
+
+.hamburger {
+    @apply transition-all duration-200 absolute w-12 right-10 top-10 h-8 z-40 flex justify-between flex-col cursor-pointer
+}
+
+.hamburger-bar {
+    @apply w-full h-[2px] bg-white rounded-full
+}
+
+.bar-up {
+    transform: rotate(225deg) translateY(-10px);
+    @apply transition-all duration-500
+}
+
+.bar-down {
+    transform: rotate(135deg) translateY(10px);
+    @apply transition-all duration-500
+}
+
+.op0 {
+    opacity: 0;
+}
+
+.sidebar {
+    right: -100%;
+    transition: .2s all ease;
+}
+
+.r0 {
+    right: 0
 }
 
 @tailwind base;

@@ -13,6 +13,9 @@ module.exports = {
         "Opensans": ['Open Sans', 'sans-serif'],
         "Poppins": ['Poppins', 'sans-serif'],
         "Manrope": ['Manrope', 'sans-serif']
+      },
+      screens: {
+        "mdl": '892px',
       }
     },
   },

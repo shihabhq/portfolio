@@ -8,12 +8,27 @@
     <title>Adnan Saim</title>
     <link rel="stylesheet" href="/dist/output.css">
     <link rel="icon" href="/imgs/logo2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="bg-background text-white">
-    <nav class="flex w-4/5 mx-auto h-28 justify-between items-center">
-        <div class="font-sans text-4xl cursor-pointer font-extrabold">AdnanSaim<span class="text-button">.</span></div>
-        <div class="font-sans text-xl">
+    <div class="hamburger mdl:hidden">
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar w-1/2"></div>
+    </div>
+    <div
+        class="font-sans sidebar w-4/5 h-screen bg-[rgba(0,0,0,.8)] z-30 space-y-6 text-xl mdl:hidden fixed flex flex-col items-center">
+        <button href="#about" class="side-button  mt-32 hover:bg-button hover:text-background">About</button>
+        <button href="#projects" class="side-button  hover:bg-button hover:text-background">Projects</button>
+        <button href="#skills" class="side-button  hover:bg-button hover:text-background">Skills</button>
+        <button href="#cv"
+            class="side-button bg-gradient-to-r from-green-400 to-blue-500  hover:opacity-50 hover:text-background">Resume</button>
+    </div>
+    <nav class="flex w-[93%] xl:w-4/5 mx-auto h-28 justify-between items-center animate__animated animate__fadeIn">
+        <div class="font-sans text-4xl cursor-pointer font-extrabold ">
+            AdnanSaim<span class="text-button">.</span></div>
+        <div class="font-sans text-xl hidden mdl:block">
             <button href="#about"
                 class="nav-button hover:-translate-y-[6px] hover:bg-button hover:text-background">About</button>
             <button href="#projects"
@@ -24,26 +39,63 @@
                 class="nav-button bg-gradient-to-r from-green-400 to-blue-500  hover:opacity-50 hover:text-background">Resume</button>
         </div>
     </nav>
-    <section class="hero w-full h-[90vh]">
-        <div class="w-4/5 mx-auto flex items-center h-full justify-between">
-            <div class="font-sans text-4xl space-y-5">
-                <p>Hi there!</p>
-                <h1 class="font-Poppins font-semibold text-7xl text-white">I'm Adnan Saim</h1>
-                <h2 class="text-white">I am a <span class="auto-text text-button"></span></h2>
+    <section class="hero w-full h-[90vh] relative">
+        <div class="hidden mdl:block">
+            <div class="w-28 h-28 absolute left-5">
+                <img src="/imgs/circle.svg" class="absolute circle w-12" alt="">
+            </div>
+            <div class="w-32 h-40 absolute top-20 right-20">
+                <img src="/imgs/cross.svg" class="absolute cross w-10 overflow-hidden" alt="">
+            </div>
+            <div class="w-24 h-32 absolute bottom-20 left-40">
+                <img src="/imgs/thunder.svg" class="absolute transition-all duration-150 thunder w-10 overflow-hidden"
+                    alt="">
+            </div>
+            <div class="w-24 h-32 absolute bottom-24 right-[45%]">
+                <img src="/imgs/block.svg" class="absolute chain w-10 overflow-hidden" alt="">
+            </div>
+            <div class="w-24 h-32 absolute top-24 right-[45%]">
+                <img src="/imgs/multiple_layers.svg"
+                    class="absolute layer transition-all duration-75 w-10 overflow-hidden" alt="">
+            </div>
+        </div>
+
+
+        <div class="w-[92%] xl:w-4/5 mx-auto flex flex-col mdl:flex-row items-center h-full justify-between">
+            <div class="font-sans my-16 mdl:my-0 text-4xl space-y-5 animate__animated animate__fadeInLeft">
+                <p class="text-2xl xl:text-4xl">Hi there!</p>
+                <h1 class="font-Poppins font-semibold text-5xl xl:text-7xl text-white">I'm Adnan Saim</h1>
+                <h2 class="text-white text-3xl xl:text-4xl">I am a <span class="auto-text text-button"></span></h2>
                 <div class="font-Poppins text-2xl">
                     <button class="hero-button hover:bg-green-400 hover:-translate-y-2">Contact me</button>
                     <button class="hero-button hover:bg-green-400 hover:-translate-y-2">Hire me</button>
                 </div>
+                <div class="space-x-8">
+                    <a href="https://twitter.com/adnansdev" target="_blank">
+                        <i
+                            class="fa-brands fa-twitter hero-icons hover:border-[#1c9cea] hover:-translate-y-[6px] hover:bg-[#1C9CEA]"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/adnan-saim-57075725b/" target="_blank">
+                        <i
+                            class="fa-brands fa-linkedin-in hero-icons hover:border-[#0072b1] hover:-translate-y-[6px] hover:bg-[#0072b1]"></i>
+                    </a>
+                    <a href="https://github.com/adnansaim" target="_blank">
+                        <i
+                            class="fa-brands fa-github hero-icons hover:border-[#171515] hover:-translate-y-1 hover:bg-[#171515]"></i>
+                    </a>
+
+                </div>
             </div>
-            <div class="">
+            <div class="animate__animated animate__fadeInUp">
                 <img src="/imgs/Web Developer_Monochromatic.svg"
-                    class="w-[600px] transition-all duration-[3s]  transform animatehero" alt="">
+                    class="w-[600px] transition-all duration-[3s] translate-y-6 transform animatehero" alt="">
             </div>
         </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/f99514d96b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
