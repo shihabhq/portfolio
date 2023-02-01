@@ -15,7 +15,7 @@ module.exports = {
         "Manrope": ['Manrope', 'sans-serif']
       },
       screens: {
-        "mdl": '892px',
+        "mdl": '980px',
       }
     },
   },

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 .nav-button{
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
   border-radius: 9999px;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -12,6 +12,29 @@
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms
+}
+
+.anav-button{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms
+}
+
+.anav-button:hover{
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(3 23 40 / var(--tw-text-opacity))
 }
 
 .side-button{
@@ -109,6 +132,45 @@
 
 .r0 {
   right: 0
+}
+
+.cv-button:hover .slide {
+  right: 0;
+  transition: all .5s ease;
+}
+
+.fa-download {
+  transform: translateY(50%);
+}
+
+.cv-button:hover a,
+.cv-button:hover i {
+  color: #031728;
+  transition: all .4s;
+}
+
+.section-heading{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #4ade80;
+  --tw-gradient-to: rgb(74 222 128 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #3b82f6;
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-family: Poppins, sans-serif;
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: transparent
+}
+
+.nav-down{
+  top: 2.5rem
+}
+
+.nav-up{
+  top: -5rem
 }
 
 /*
@@ -638,6 +700,11 @@ video {
   position: relative
 }
 
+.inset-x-1\/2{
+  left: 50%;
+  right: 50%
+}
+
 .left-5{
   left: 1.25rem
 }
@@ -670,6 +737,26 @@ video {
   top: 6rem
 }
 
+.bottom-0{
+  bottom: 0px
+}
+
+.-right-full{
+  right: -100%
+}
+
+.right-0{
+  right: 0px
+}
+
+.bottom-1\/2{
+  bottom: 50%
+}
+
+.z-50{
+  z-index: 50
+}
+
 .z-30{
   z-index: 30
 }
@@ -684,8 +771,25 @@ video {
   margin-bottom: 4rem
 }
 
+.my-\[30rem\]{
+  margin-top: 30rem;
+  margin-bottom: 30rem
+}
+
 .mt-32{
   margin-top: 8rem
+}
+
+.mb-10{
+  margin-bottom: 2.5rem
+}
+
+.mr-8{
+  margin-right: 2rem
+}
+
+.block{
+  display: block
 }
 
 .flex{
@@ -694,6 +798,10 @@ video {
 
 .hidden{
   display: none
+}
+
+.h-\[72px\]{
+  height: 72px
 }
 
 .h-screen{
@@ -718,6 +826,15 @@ video {
 
 .h-full{
   height: 100%
+}
+
+.h-16{
+  height: 4rem
+}
+
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content
 }
 
 .w-1\/2{
@@ -764,6 +881,26 @@ video {
   width: 600px
 }
 
+.w-\[95\%\]{
+  width: 95%
+}
+
+.w-2\/4{
+  width: 50%
+}
+
+.w-\[450px\]{
+  width: 450px
+}
+
+.w-11\/12{
+  width: 91.666667%
+}
+
+.w-56{
+  width: 14rem
+}
+
 .translate-y-6{
   --tw-translate-y: 1.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
@@ -783,6 +920,10 @@ video {
 
 .items-center{
   align-items: center
+}
+
+.justify-start{
+  justify-content: flex-start
 }
 
 .justify-between{
@@ -807,8 +948,31 @@ video {
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)))
 }
 
+.space-y-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse))
+}
+
 .overflow-hidden{
   overflow: hidden
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth
+}
+
+.rounded-full{
+  border-radius: 9999px
+}
+
+.border{
+  border-width: 1px
+}
+
+.border-button{
+  --tw-border-opacity: 1;
+  border-color: rgb(102 252 241 / var(--tw-border-opacity))
 }
 
 .bg-background{
@@ -816,8 +980,17 @@ video {
   background-color: rgb(3 23 40 / var(--tw-bg-opacity))
 }
 
+.bg-\[rgba\(0\2c 0\2c 0\2c \.7\)\]{
+  background-color: rgba(0,0,0,.7)
+}
+
 .bg-\[rgba\(0\2c 0\2c 0\2c \.8\)\]{
   background-color: rgba(0,0,0,.8)
+}
+
+.bg-button{
+  --tw-bg-opacity: 1;
+  background-color: rgb(102 252 241 / var(--tw-bg-opacity))
 }
 
 .bg-gradient-to-r{
@@ -834,12 +1007,40 @@ video {
   --tw-gradient-to: #3b82f6
 }
 
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem
+}
+
+.text-center{
+  text-align: center
+}
+
 .font-sans{
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
 .font-Poppins{
   font-family: Poppins, sans-serif
+}
+
+.font-Opensans{
+  font-family: Open Sans, sans-serif
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem
 }
 
 .text-xl{
@@ -875,6 +1076,26 @@ video {
   font-weight: 600
 }
 
+.font-medium{
+  font-weight: 500
+}
+
+.font-normal{
+  font-weight: 400
+}
+
+.uppercase{
+  text-transform: uppercase
+}
+
+.leading-10{
+  line-height: 2.5rem
+}
+
+.leading-8{
+  line-height: 2rem
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity))
@@ -885,10 +1106,19 @@ video {
   color: rgb(102 252 241 / var(--tw-text-opacity))
 }
 
+.ring-button{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(102 252 241 / var(--tw-ring-opacity))
+}
+
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms
+}
+
+.duration-300{
+  transition-duration: 300ms
 }
 
 .duration-150{
@@ -901,6 +1131,15 @@ video {
 
 .duration-\[3s\]{
   transition-duration: 3s
+}
+
+.duration-500{
+  transition-duration: 500ms
+}
+
+.hover\:-translate-y-0:hover{
+  --tw-translate-y: -0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
 
 .hover\:-translate-y-\[6px\]:hover{
@@ -967,28 +1206,70 @@ video {
   opacity: 0.5
 }
 
-@media (min-width: 892px){
+.focus\:ring-2:focus{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
+}
+
+@media (min-width: 640px){
+  .sm\:w-4\/5{
+    width: 80%
+  }
+}
+
+@media (min-width: 980px){
   .mdl\:my-0{
     margin-top: 0px;
     margin-bottom: 0px
+  }
+
+  .mdl\:my-32{
+    margin-top: 8rem;
+    margin-bottom: 8rem
   }
 
   .mdl\:block{
     display: block
   }
 
+  .mdl\:flex{
+    display: flex
+  }
+
   .mdl\:hidden{
     display: none
   }
 
+  .mdl\:w-1\/2{
+    width: 50%
+  }
+
   .mdl\:flex-row{
     flex-direction: row
+  }
+
+  .mdl\:items-start{
+    align-items: flex-start
+  }
+
+  .mdl\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem
+  }
+
+  .mdl\:text-left{
+    text-align: left
   }
 }
 
 @media (min-width: 1280px){
   .xl\:w-4\/5{
     width: 80%
+  }
+
+  .xl\:w-2\/5{
+    width: 40%
   }
 
   .xl\:text-4xl{

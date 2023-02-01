@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,17 @@
 </head>
 
 <body class="bg-background text-white">
+    <nav style="transform: translate(-50%);"
+        class="animated-nav hidden mdl:flex fixed inset-x-1/2 uppercase nav-down nav-up z-50 transition-all duration-300 bg-[rgba(0,0,0,.7)] px-16 rounded-full items-center text-white w-fit text-lg h-[72px]">
+        <button class="anav-button" onclick="window.location.href='#home'">Home</button>
+        <button class="anav-button" onclick="window.location.href='#about';">About</button>
+        <button class="anav-button ">Skills</button>
+        <button class="anav-button ">Blog</button>
+        <button class="anav-button ">Portfolio</button>
+        <button
+            class="anav-button hover:-translate-y-0 bg-gradient-to-r from-green-400 to-blue-500  hover:opacity-50 hover:text-background">Resume</button>
+    </nav>
+
     <div class="hamburger mdl:hidden">
         <div class="hamburger-bar"></div>
         <div class="hamburger-bar"></div>
@@ -19,9 +30,11 @@
     </div>
     <div
         class="font-sans sidebar w-4/5 h-screen bg-[rgba(0,0,0,.8)] z-30 space-y-6 text-xl mdl:hidden fixed flex flex-col items-center">
-        <button href="#about" class="side-button  mt-32 hover:bg-button hover:text-background">About</button>
-        <button href="#projects" class="side-button  hover:bg-button hover:text-background">Projects</button>
-        <button href="#skills" class="side-button  hover:bg-button hover:text-background">Skills</button>
+        <button onclick="window.location.href='#about';" href=""
+            class="side-button  mt-32 hover:bg-button hover:text-background">About</button>
+        <button href="#projects" class="side-button  hover:bg-button hover:text-background">Skills</button>
+        <button href="#skills" class="side-button  hover:bg-button hover:text-background">Blog</button>
+        <button href="#skills" class="side-button  hover:bg-button hover:text-background">portfolio</button>
         <button href="#cv"
             class="side-button bg-gradient-to-r from-green-400 to-blue-500  hover:opacity-50 hover:text-background">Resume</button>
     </div>
@@ -29,17 +42,19 @@
         <div class="font-sans text-4xl cursor-pointer font-extrabold ">
             AdnanSaim<span class="text-button">.</span></div>
         <div class="font-sans text-xl hidden mdl:block">
-            <button href="#about"
+            <button onclick="window.location.href='#about';"
                 class="nav-button hover:-translate-y-[6px] hover:bg-button hover:text-background">About</button>
             <button href="#projects"
-                class="nav-button  hover:-translate-y-[6px] hover:bg-button hover:text-background">Projects</button>
+                class="nav-button  hover:-translate-y-[6px] hover:bg-button hover:text-background">Skills</button>
+            <button href="#projects"
+                class="nav-button  hover:-translate-y-[6px] hover:bg-button hover:text-background">Blogs</button>
             <button href="#skills"
-                class="nav-button hover:-translate-y-[6px] hover:bg-button hover:text-background">Skills</button>
+                class="nav-button hover:-translate-y-[6px] hover:bg-button hover:text-background">Projects</button>
             <button href="#cv"
                 class="nav-button bg-gradient-to-r from-green-400 to-blue-500  hover:opacity-50 hover:text-background">Resume</button>
         </div>
     </nav>
-    <section class="hero w-full h-[90vh] relative">
+    <section class="hero w-full h-[90vh] relative" id="home">
         <div class="hidden mdl:block">
             <div class="w-28 h-28 absolute left-5">
                 <img src="/imgs/circle.svg" class="absolute circle w-12" alt="">
@@ -92,6 +107,47 @@
             </div>
         </div>
     </section>
+    <section class="w-full h-screen my-[30rem] mdl:my-32 mdl:py-32" id="about">
+        <h1 class="block mdl:hidden section-heading mb-10 text-center">About me</h1>
+        <div class="flex flex-col mdl:flex-row mdl:items-start items-center justify-start  w-[95%] xl:w-4/5 mx-auto">
+            <div class="w-2/4 animate__animated animate__fadeInUp">
+                <img src="/imgs/IMG_20221108_074857_3.jpg" class="w-[450px] rounded-full mx-auto" alt="">
+            </div>
+            <div class="space-y-10 font-Opensans text-center sm:w-4/5 mdl:text-left w-11/12 mdl:w-1/2 xl:w-2/5">
+                <h1 class="section-heading mdl:block hidden">
+                    ABOUT ME</h1>
+                <h2 class="text-3xl font-medium font-Opensans leading-10">I am a <span class="text-button">Freelance
+                        Frontend
+                        Developer <span class="text-white">&</span> <br>Web
+                        Designer</span></h2>
+                <p class="text-lg font-normal leading-8">
+                    I'm from Bangladesh, and I'm 19 years old. I code and design website components for fantastic
+                    people
+                    all over the world. Delivering a streamlined and user-friendly experience is my main priority.
+                </p>
+                <p class="text-lg font-normal leading-8">
+                    I love creating websites with superior front-end features and designs. I provide my clients with
+                    the
+                    greatest possible customer experience.
+                </p>
+                <button
+                    class="w-56 rounded-full cv-button overflow-hidden relative font-Opensans h-16 focus:ring-2 ring-button border border-button text-lg">
+
+                    <div
+                        class="bottom-0 slide transition-right duration-500 -right-full w-full h-full bg-button absolute">
+                    </div>
+                    <a class="relative mr-8 text-xl font-semibold transition-all">Download CV</a>
+                    <i class="fa-solid fa-download absolute right-0 px-5 py-5 bottom-1/2 rounded-full
+                    bg-button"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1 class="section-heading text-center">What I do</h1>
+    </section>
+
+    <!-- skill portfolio blog footer offerings -->
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="/script.js"></script>

@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
 
-
-
 .nav-button {
-    @apply px-8 py-2 rounded-full mx-3 transition-all duration-200 font-medium
+    @apply px-8 py-2 rounded-full mx-1 transition-all duration-200 font-medium
+}
+
+.anav-button {
+    @apply px-8 py-2 rounded-lg mx-1 transition-all duration-300 font-medium
+}
+
+.anav-button:hover {
+    @apply -translate-y-1 bg-green-400 text-background
 }
 
 .side-button {
@@ -47,6 +53,33 @@
 
 .r0 {
     right: 0
+}
+
+.cv-button:hover .slide {
+    right: 0;
+    transition: all .5s ease;
+}
+
+.fa-download {
+    transform: translateY(50%);
+}
+
+.cv-button:hover a,
+.cv-button:hover i {
+    color: #031728;
+    transition: all .4s;
+}
+
+.section-heading {
+    @apply text-6xl font-Poppins font-semibold uppercase bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 text-transparent
+}
+
+.nav-down {
+    @apply top-10
+}
+
+.nav-up {
+    @apply -top-20
 }
 
 @tailwind base;
