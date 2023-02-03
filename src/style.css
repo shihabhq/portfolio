@@ -9,7 +9,7 @@
 }
 
 .anav-button:hover {
-    @apply -translate-y-1 bg-green-400 text-background
+    @apply bg-green-400 text-background
 }
 
 .side-button {
@@ -80,6 +80,14 @@
 
 .nav-up {
     @apply -top-20
+}
+
+.service-heading {
+    @apply text-2xl text-button font-Opensans font-bold text-center h-16
+}
+
+.service-text {
+    @apply font-normal opacity-70 mt-4 text-center text-lg
 }
 
 @tailwind base;

@@ -13,10 +13,10 @@
 
 <body class="bg-background text-white">
     <nav style="transform: translate(-50%);"
-        class="animated-nav hidden mdl:flex fixed inset-x-1/2 uppercase nav-down nav-up z-50 transition-all duration-300 bg-[rgba(0,0,0,.7)] px-16 rounded-full items-center text-white w-fit text-lg h-[72px]">
+        class="animated-nav hidden mdl:flex fixed inset-x-1/2 uppercase nav-down nav-up z-50 transition-all duration-300 bg-[rgba(0,0,0,.8)] px-16 rounded-full items-center text-white w-fit text-lg h-[72px]">
         <button class="anav-button" onclick="window.location.href='#home'">Home</button>
         <button class="anav-button" onclick="window.location.href='#about';">About</button>
-        <button class="anav-button ">Skills</button>
+        <button class="anav-button" onclick="window.location.href='#skills'">Skills</button>
         <button class="anav-button ">Blog</button>
         <button class="anav-button ">Portfolio</button>
         <button
@@ -32,7 +32,8 @@
         class="font-sans sidebar w-4/5 h-screen bg-[rgba(0,0,0,.8)] z-30 space-y-6 text-xl mdl:hidden fixed flex flex-col items-center">
         <button onclick="window.location.href='#about';" href=""
             class="side-button  mt-32 hover:bg-button hover:text-background">About</button>
-        <button href="#projects" class="side-button  hover:bg-button hover:text-background">Skills</button>
+        <button onclick="window.location.href='#skills'"
+            class="side-button  hover:bg-button hover:text-background">Skills</button>
         <button href="#skills" class="side-button  hover:bg-button hover:text-background">Blog</button>
         <button href="#skills" class="side-button  hover:bg-button hover:text-background">portfolio</button>
         <button href="#cv"
@@ -44,17 +45,16 @@
         <div class="font-sans text-xl hidden mdl:block">
             <button onclick="window.location.href='#about';"
                 class="nav-button hover:-translate-y-[6px] hover:bg-button hover:text-background">About</button>
-            <button href="#projects"
+            <button onclick="window.location.href='#skills'"
                 class="nav-button  hover:-translate-y-[6px] hover:bg-button hover:text-background">Skills</button>
             <button href="#projects"
                 class="nav-button  hover:-translate-y-[6px] hover:bg-button hover:text-background">Blogs</button>
-            <button href="#skills"
-                class="nav-button hover:-translate-y-[6px] hover:bg-button hover:text-background">Projects</button>
+            <button class=" nav-button hover:-translate-y-[6px] hover:bg-button hover:text-background">Projects</button>
             <button href="#cv"
                 class="nav-button bg-gradient-to-r from-green-400 to-blue-500  hover:opacity-50 hover:text-background">Resume</button>
         </div>
     </nav>
-    <section class="hero w-full h-[90vh] relative" id="home">
+    <section class="hero w-full h-[90vh] relative min-h-[560px]" id="home">
         <div class="hidden mdl:block">
             <div class="w-28 h-28 absolute left-5">
                 <img src="/imgs/circle.svg" class="absolute circle w-12" alt="">
@@ -107,7 +107,7 @@
             </div>
         </div>
     </section>
-    <section class="w-full h-screen my-[30rem] mdl:my-32 mdl:py-32" id="about">
+    <section class="w-full h-screen my-[30rem] mdl:my-24 mdl:py-32 min-h-[775px]" id="about">
         <h1 class="block mdl:hidden section-heading mb-10 text-center">About me</h1>
         <div class="flex flex-col mdl:flex-row mdl:items-start items-center justify-start  w-[95%] xl:w-4/5 mx-auto">
             <div class="w-2/4 animate__animated animate__fadeInUp">
@@ -143,8 +143,96 @@
             </div>
         </div>
     </section>
-    <section id="skills">
-        <h1 class="section-heading text-center">What I do</h1>
+    <section class="w-full" id="offerings">
+        <h1 class="section-heading text-center ">What I Do</h1>
+        <div class="flex w-[93%] flex-col lg:flex-row xl:w-4/5 mx-auto justify-between items-center my-24 ">
+            <div
+                class="bg-card w-11/12 sm:w-4/6 lg:w-[400px] rounded-lg hover:bg-[#0a2c40] transition-all duration-200 lg:max-w-[30%] mt-16">
+                <img src="/imgs/services/Landing Page_Outline.svg" class="w-[250px] mx-auto" alt="">
+                <div class="px-8 pb-8">
+                    <h1 class="service-heading">Responsive Landing Page design</h1>
+                    <p class="service-text">
+                        I offer custom responsive landing page design that meets the unique needs of your business. I
+                        understand that having a website that looks great on any device is crucial for success, and I
+                        strive to create landing pages that are both visually stunning and functional.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="bg-card w-11/12 sm:w-4/6 lg:w-[400px] rounded-lg hover:bg-[#0a2c40] transition-all duration-200 lg:max-w-[30%] mt-16">
+                <img src="/imgs/services/Web development _Outline.svg" class="w-[250px] mx-auto" alt="">
+                <div class="px-8 pb-8">
+                    <h1 class="service-heading py-auto">Frontend Development</h1>
+                    <p class="service-text">I am a frontend developer and I provide front-end development services to
+                        realize your digital
+                        vision because I have a passion for designing aesthetically pleasing and user-friendly websites.
+                        I have a firm grasp of Frontend Technologies.
+                        Whether you need a website redesign, a new web application I've
+                        got you covered.
+                    </p>
+                </div>
+
+            </div>
+            <div
+                class="bg-card w-11/12 sm:w-4/6 lg:w-[400px] rounded-lg hover:bg-[#0a2c40] transition-all duration-200 lg:max-w-[30%] mt-16">
+                <img src="/imgs/services/UI design _Outline.svg" class="w-[250px] mx-auto" alt="">
+                <div class="px-8 pb-8">
+                    <h1 class="service-heading">Optimizing, Developing & Maintaining web UI
+                    </h1>
+                    <p class="service-text">I can optimize your website to
+                        it's
+                        highest
+                        Performance. I will
+                        add
+                        extra features
+                        on your
+                        website and
+                        users can navigate your website content easily through user-friendly design, mobile
+                        responsiveness, and better accessibility.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="skills" class="hidden">
+        <h1 class="section-heading text-center">My Skill</h1>
+        <div class="grid">
+            <div>
+                <img src="/imgs/tech stacks/html-icon.svg" alt="">
+                <p>HTML</p>
+            </div>
+            <div>
+                <img src="/imgs/tech stacks/css-icon.svg" alt="">
+                <p>CSS</p>
+            </div>
+            <div>
+                <img src="/imgs/tech stacks/sass-icon.svg" alt="">
+                <p>Sass</p>
+            </div>
+            <div>
+                <img src="/imgs/tech stacks/tailwind-css-icon.svg" alt="">
+                <p>Tailwind CSS</p>
+            </div>
+            <div>
+                <img src="/imgs/tech stacks/bootstrap-5-logo-icon.svg" alt="">
+                <p>Bootstrap 5</p>
+            </div>
+            <div>
+                <img src="/imgs/tech stacks/javascript-programming-language-icon.svg" alt="">
+                <p>JavaScript</p>
+            </div>
+            <div>
+                <img src="/imgs/tech stacks/responsive.svg" alt="">
+                <p>Responsive Design</p>
+            </div>
+            <div>
+                <img src="/imgs/tech stacks/git-icon.svg" alt="">
+                <p>Git & Github</p>
+            </div>
+
+        </div>
     </section>
 
     <!-- skill portfolio blog footer offerings -->
