@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         background: "#031728",
         button: "#66FCF1",
-        card: "#041C2D"
+        card: "#041C2D",
+        cardHover: "#042234"
       },
       fontFamily: {
         "Roboto": ['Roboto', 'sans-serif'],

@@ -82,12 +82,36 @@
     @apply -top-20
 }
 
+.service-div {
+    @apply bg-card w-11/12 transition-all duration-200 mt-16 min-h-[500px] rounded-lg
+}
+
 .service-heading {
     @apply text-2xl text-button font-Opensans font-bold text-center h-16
 }
 
 .service-text {
     @apply font-normal opacity-70 mt-4 text-center text-lg
+}
+
+.img-container {
+    @apply grid w-11/12 mx-auto grid-cols-1 gap-8 text-center
+}
+
+.img-container div {
+    @apply pt-12 pb-8 bg-card rounded-xl transition-all duration-300
+}
+
+.img-container div:hover {
+    @apply bg-cardHover
+}
+
+.img-container div img {
+    @apply mx-auto w-[150px] h-[150px] min-w-[150px] min-h-[150px]
+}
+
+.img-container div p {
+    @apply font-Poppins text-xl font-semibold mt-6
 }
 
 @tailwind base;

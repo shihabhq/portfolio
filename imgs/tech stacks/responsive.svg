@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 496 511.86"><path d="M0 0h320.44v146.94H0V0zm356.99 364.92H496v146.94H356.99V364.92zM0 364.92h320.44v146.94H0V364.92zm139.01-182.46H0v146.93h139.01V182.46zm356.99 0H175.56v146.93H496V182.46zM356.99 0H496v146.94H356.99V0z"/></svg>
+<svg width="496" height="511.86" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" text-rendering="geometricPrecision" shape-rendering="geometricPrecision">
+
+ <g>
+  <title>Layer 1</title>
+  <path fill="#02d7ef" id="svg_1" d="m0,0l320.44,0l0,146.94l-320.44,0l0,-146.94zm356.99,364.92l139.01,0l0,146.94l-139.01,0l0,-146.94zm-356.99,0l320.44,0l0,146.94l-320.44,0l0,-146.94zm139.01,-182.46l-139.01,0l0,146.93l139.01,0l0,-146.93zm356.99,0l-320.44,0l0,146.93l320.44,0l0,-146.93zm-139.01,-182.46l139.01,0l0,146.94l-139.01,0l0,-146.94z"/>
+ </g>
+</svg>
