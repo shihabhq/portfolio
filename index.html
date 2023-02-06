@@ -18,7 +18,7 @@
         <button class="anav-button" onclick="window.location.href='#about';">About</button>
         <button class="anav-button" onclick="window.location.href='#skills'">Skills</button>
         <button class="anav-button ">Blog</button>
-        <button class="anav-button ">Portfolio</button>
+        <button class="anav-button" onclick="window.location.href='#portfolio'">Portfolio</button>
         <button
             class="anav-button hover:-translate-y-0 bg-gradient-to-r from-green-400 to-blue-500  hover:opacity-50 hover:text-background">Resume</button>
     </nav>
@@ -35,7 +35,8 @@
         <button onclick="window.location.href='#skills'"
             class="side-button  hover:bg-button hover:text-background">Skills</button>
         <button href="#skills" class="side-button  hover:bg-button hover:text-background">Blog</button>
-        <button href="#skills" class="side-button  hover:bg-button hover:text-background">portfolio</button>
+        <button class="side-button  hover:bg-button hover:text-background"
+            onclick="window.location.href='#portfolio'">portfolio</button>
         <button href="#cv"
             class="side-button bg-gradient-to-r from-green-400 to-blue-500  hover:opacity-50 hover:text-background">Resume</button>
     </div>
@@ -47,9 +48,9 @@
                 class="nav-button hover:-translate-y-[6px] hover:bg-button hover:text-background">About</button>
             <button onclick="window.location.href='#skills'"
                 class="nav-button  hover:-translate-y-[6px] hover:bg-button hover:text-background">Skills</button>
-            <button href="#projects"
-                class="nav-button  hover:-translate-y-[6px] hover:bg-button hover:text-background">Blogs</button>
-            <button class=" nav-button hover:-translate-y-[6px] hover:bg-button hover:text-background">Projects</button>
+            <button class="nav-button  hover:-translate-y-[6px] hover:bg-button hover:text-background">Blogs</button>
+            <button class=" nav-button hover:-translate-y-[6px] hover:bg-button hover:text-background"
+                onclick="window.location.href='#portfolio'">Projects</button>
             <button href="#cv"
                 class="nav-button bg-gradient-to-r from-green-400 to-blue-500  hover:opacity-50 hover:text-background">Resume</button>
         </div>
@@ -234,35 +235,102 @@
 
         </div>
     </section>
-    <section class="portfolio">
-        <h1 class="Section-heading">Things I have built</h1>
+    <section id="portfolio" class="py-44">
+        <h1 class="section-heading text-center">Things I have built</h1>
 
-        <div class="projects w-4/5 mx-auto">
-            <div>
-                <div class="">
-                    <img src="" alt="">
+        <div class="projects w-11/12  mx-auto max-w-[95rem] space-y-24 my-44">
+            <div
+                class="sm:grid sm:grid-rows-2 sm:grid-cols-1 gap-20 p-10 sm:p-10 min-h-[486px] bg-card rounded-2xl mdl:grid-cols-2 mdl:grid-rows-1 mdl:py-20 mdl:px-6 2xl:px-20">
+                <div class="overflow-hidden w-full flex items-center sm:mb-0 mb-20 rounded-lg">
+                    <a href="https://dynamic-colorapp.netlify.app/" class="w-full" target="_blank">
+                        <img src="/imgs/projects/colorapp.png"
+                            class="rounded-lg transition-all md:w-4/5 md:mx-auto mdl:w-full w-full duration-200 hover:opacity-50 hover:scale-[1.02]"
+                            alt="">
+                    </a>
+
                 </div>
-                <div class="">
-                    <h2>PiColor</h2>
-                    <p></p>
+                <div class="2xl:mt-4 sm:w-4/5 mx-auto mdl:w-full">
+                    <h2 class="font-Poppins text-4xl font-semibold text-button  mb-6 h-fit mdl:text-2xl xl:text-4xl">
+                        PiColor</h2>
+                    <p class="2xl:text-lg text-lg mdl:text-base font-medium xl:w-4/5">
+                        PiColor is a color-choosing app with a bunch of features, such as:
+                    <ul class="list-disc text-start my-4 ml-4 2xl:text-lg text-lg mdl:text-sm font-medium">
+                        <li>Generating a random color and viewing a live demo</li>
+                        <li>interactive color copy system</li>
+                        <li>converting Hex color to RGB color and vice versa</li>
+                        <li>there is red green blue range to adjust color</li>
+                    </ul>
+                    </p>
+                    <p class="2xl:text-lg text-lg mdl:text-base font-medium xl:w-4/5">
+                        This project was built with HTML, CSS, and JavaScript. Some advanced concepts of javascript were
+                        used to build this.
+
+                    </p>
+                    <div class=" mt-8 xl:mt-16">
+                        <a class="portfolio-button mdl:text-lg" href="https://dynamic-colorapp.netlify.app/"
+                            target="_blank">View
+                            Live</a>
+                        <a class="hidden sm:inline-block portfolio-button ml-8 mdl:text-lg"
+                            href="https://github.com/adnansaim/dynamic-colorApp" target="_blank">Source
+                            Code</a>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="">
-                    <img src="" alt="">
+            <div
+                class="sm:grid sm:grid-rows-2 sm:grid-cols-1 min-h-[486px] gap-20 p-10 sm:p-10 bg-card rounded-2xl mdl:grid-cols-2 mdl:grid-rows-1 my-44 mdl:py-20 mdl:px-6 2xl:px-20">
+                <div class="overflow-hidden w-full flex items-center sm:mb-0 mb-20 rounded-lg">
+                    <a href="https://revit-landingpage.netlify.app/" target="_blank">
+                        <img src="/imgs/projects/revIT landing page.png"
+                            class="rounded-lg transition-all md:w-4/5 md:mx-auto mdl:w-full w-full duration-200 hover:opacity-50 hover:scale-[1.02]"
+                            alt="">
+                    </a>
+
                 </div>
-                <div class="">
-                    <h2>RevIT Landing Page</h2>
-                    <p></p>
+                <div class="2xl:mt-4 sm:w-4/5 mx-auto mdl:w-full">
+                    <h2 class="font-Poppins text-4xl font-semibold text-button  mb-6 h-fit mdl:text-2xl xl:text-4xl">
+                        RevIt landing Page</h2>
+                    <p class="2xl:text-lg text-lg mdl:text-base font-medium xl:w-4/5">
+                        This is a demo landing page for an IT solution company. I created this landing page using
+                        SASS(mainly).
+
+                        It is divided into 10 sections (including the navbar).
+                    </p>
+                    <div class=" mt-8 xl:mt-28">
+                        <a class="portfolio-button mdl:text-lg" href="https://revit-landingpage.netlify.app/"
+                            target="_blank">View
+                            Live</a>
+                        <a class="hidden sm:inline-block portfolio-button ml-8 mdl:text-lg"
+                            href="https://github.com/adnansaim/RevIt-landing-page/tree/main" target="_blank">Source
+                            Code</a>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="">
-                    <img src="" alt="">
+            <div
+                class="sm:grid sm:grid-rows-2 min-h-[486px] sm:grid-cols-1 gap-20 p-10 sm:p-10 bg-card rounded-2xl mdl:grid-cols-2 mdl:grid-rows-1 my-44 mdl:py-20 mdl:px-6 2xl:px-20">
+                <div class="overflow-hidden w-full flex items-center sm:mb-0 mb-20 rounded-lg">
+                    <a href="https://searchtv-app.netlify.app/" target="_blank">
+                        <img src="/imgs/projects/search-tv app.png"
+                            class="rounded-lg transition-all md:w-4/5 md:mx-auto mdl:w-full w-full duration-200 hover:opacity-50 hover:scale-[1.02]"
+                            alt="">
+                    </a>
+
                 </div>
-                <div class="">
-                    <h2>Picolor</h2>
-                    <p></p>
+                <div class="2xl:mt-4 sm:w-4/5 mx-auto mdl:w-full">
+                    <h2 class="font-Poppins text-4xl font-semibold text-button  mb-6 h-fit mdl:text-2xl xl:text-4xl">
+                        TV show search</h2>
+                    <p class="2xl:text-lg text-lg mdl:text-base font-medium xl:w-4/5">
+                        This is a TV show search app. Give it any kind of TV show name to input, and it will show all
+                        the shows containing the same name.br <br>
+                        I’ve used JavaScript Async-Await functions and some Dom manipulation to make this. Also, Styled
+                        it using CSS
+                    </p>
+                    <div class=" mt-8 xl:mt-16">
+                        <a class="portfolio-button mdl:text-lg" href="https://searchtv-app.netlify.app/"
+                            target="_blank">View
+                            Live</a>
+                        <a class="hidden sm:inline-block portfolio-button ml-8 mdl:text-lg"
+                            href="https://github.com/adnansaim/Search-tv-show" target="_blank">Source Code</a>
+                    </div>
                 </div>
             </div>
         </div>

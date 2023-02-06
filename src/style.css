@@ -114,6 +114,14 @@
     @apply font-Poppins text-xl font-semibold mt-6
 }
 
+.portfolio-button {
+    @apply rounded-full px-8 py-3 transition-all duration-200 border-2 bg-button font-Opensans text-lg border-button font-bold text-card
+}
+
+.portfolio-button:hover {
+    @apply bg-card text-white
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
