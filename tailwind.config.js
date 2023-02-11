@@ -18,9 +18,6 @@ module.exports = {
       screens: {
         "mdl": '980px',
       },
-      gridTemplateColumn: {
-        "20": "1fr 1fr;"
-      }
     },
   },
   plugins: [],
