@@ -63,3 +63,11 @@ document.addEventListener('scroll', function () {
     }
 })
 
+//contact functionality
+
+let contactName = document.getElementById('contact-name')
+contactEmail = document.getElementById('contact-email')
+contactMsg = document.getElementById('contact-message')
+
+
+

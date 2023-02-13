@@ -409,28 +409,34 @@
                 </div>
             </div>
 
-            <form action="#" class="bg-card p-12 rounded-2xl space-y-8">
+            <form action="https://formsubmit.co/438ce5424609b476640040eedfa690ea" method="POST"
+                class="bg-card p-12 rounded-2xl space-y-8">
                 <h1 class="text-3xl font-Poppins font-semibold">Send me a message</h1>
                 <div class="flex justify-between">
-                    <input type="text" placeholder="Name" required
+                    <input type="text" name="name" placeholder="Name"
                         class="bg-inherit px-4 text-lg py-3 w-[48%] focus:border-green-400 border border-transparent mr-auto outline-none bg-[#032135] rounded-xl">
-                    <input type="email" placeholder="Email" required
+                    <input type="email" name="email" placeholder="Email" required id="contact-email"
                         class="bg-inherit px-4 text-lg py-3 w-[48%] outline-none focus:border-green-400 border border-transparent bg-[#032135] rounded-xl">
                 </div>
-                <textarea name="message" id="message"
+                <textarea name="message" id="contact-message"
                     class="w-full h-[200px] border border-transparent outline-none focus:border-green-400 rounded-2xl text-lg bg-[#032135] p-4"
-                    placeholder="Message" style="resize: none;" required></textarea>
+                    placeholder="Message" style="resize: none;" required name="message"></textarea>
                 <button
-                    class="bg-button text-background px-10 mx-auto py-3 font-Poppins transition-all duration-200 font-semibold text-lg rounded-xl border border-button hover:bg-card hover:text-white">Send
+                    class="bg-button text-background px-10 mx-auto py-3 font-Poppins transition-all duration-200 font-semibold text-lg rounded-xl border border-button hover:bg-card hover:text-white"
+                    onclick="" type="submit">
+                    Send
                     <i class="fa-solid fa-paper-plane"></i></button>
+                <input type="hidden" name="_captcha" value="false">
+            </form>
         </div>
 
     </section>
     <!--footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="/script.js"></script>
+
     <script src="https://kit.fontawesome.com/f99514d96b.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>

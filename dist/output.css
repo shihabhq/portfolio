@@ -1010,28 +1010,12 @@ video {
   margin-left: 2rem
 }
 
-.mb-8{
-  margin-bottom: 2rem
-}
-
-.ml-5{
-  margin-left: 1.25rem
-}
-
-.mr-5{
-  margin-right: 1.25rem
-}
-
 .mr-3{
   margin-right: 0.75rem
 }
 
 .mr-auto{
   margin-right: auto
-}
-
-.box-content{
-  box-sizing: content-box
 }
 
 .block{
@@ -1081,22 +1065,6 @@ video {
 .h-fit{
   height: -moz-fit-content;
   height: fit-content
-}
-
-.h-\[500px\]{
-  height: 500px
-}
-
-.h-\[30px\]{
-  height: 30px
-}
-
-.h-\[300px\]{
-  height: 300px
-}
-
-.h-\[250px\]{
-  height: 250px
 }
 
 .h-\[200px\]{
@@ -1188,28 +1156,8 @@ video {
   width: 250px
 }
 
-.w-\[100px\]{
-  width: 100px
-}
-
-.w-\[50px\]{
-  width: 50px
-}
-
-.w-\[30px\]{
-  width: 30px
-}
-
 .w-\[40px\]{
   width: 40px
-}
-
-.w-2\/5{
-  width: 40%
-}
-
-.w-\[45\%\]{
-  width: 45%
 }
 
 .w-\[48\%\]{
@@ -1352,23 +1300,8 @@ video {
   border-color: rgb(34 197 94 / var(--tw-border-opacity))
 }
 
-.border-white{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity))
-}
-
 .border-transparent{
   border-color: transparent
-}
-
-.border-blue-600{
-  --tw-border-opacity: 1;
-  border-color: rgb(37 99 235 / var(--tw-border-opacity))
-}
-
-.border-green-400{
-  --tw-border-opacity: 1;
-  border-color: rgb(74 222 128 / var(--tw-border-opacity))
 }
 
 .bg-background{
@@ -1404,38 +1337,9 @@ video {
   background-color: inherit
 }
 
-.bg-cyan-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(165 243 252 / var(--tw-bg-opacity))
-}
-
-.bg-\[\#1b4168\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(27 65 104 / var(--tw-bg-opacity))
-}
-
-.bg-\[\#032e5a\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(3 46 90 / var(--tw-bg-opacity))
-}
-
-.bg-\[\#072438\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(7 36 56 / var(--tw-bg-opacity))
-}
-
-.bg-\[\#06263b\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(6 38 59 / var(--tw-bg-opacity))
-}
-
 .bg-\[\#032135\]{
   --tw-bg-opacity: 1;
   background-color: rgb(3 33 53 / var(--tw-bg-opacity))
-}
-
-.bg-\[\#32135\]{
-  background-color: #32135
 }
 
 .bg-gradient-to-r{
@@ -1458,22 +1362,6 @@ video {
 
 .p-3{
   padding: 0.75rem
-}
-
-.p-8{
-  padding: 2rem
-}
-
-.p-5{
-  padding: 1.25rem
-}
-
-.p-6{
-  padding: 1.5rem
-}
-
-.p-16{
-  padding: 4rem
 }
 
 .p-12{
@@ -1522,26 +1410,6 @@ video {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem
-}
-
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem
-}
-
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem
-}
-
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem
-}
-
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem
 }
 
 .px-10{
@@ -1619,10 +1487,6 @@ video {
   font-weight: 400
 }
 
-.font-bold{
-  font-weight: 700
-}
-
 .uppercase{
   text-transform: uppercase
 }
@@ -1653,10 +1517,6 @@ video {
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px
-}
-
-.outline-button{
-  outline-color: #66FCF1
 }
 
 .ring-button{
@@ -1692,10 +1552,6 @@ video {
 
 .duration-200{
   transition-duration: 200ms
-}
-
-.duration-100{
-  transition-duration: 100ms
 }
 
 .hover\:-translate-y-0:hover{
@@ -1788,40 +1644,15 @@ video {
   opacity: 0.5
 }
 
-.focus\:border-button:focus{
-  --tw-border-opacity: 1;
-  border-color: rgb(102 252 241 / var(--tw-border-opacity))
-}
-
 .focus\:border-green-400:focus{
   --tw-border-opacity: 1;
   border-color: rgb(74 222 128 / var(--tw-border-opacity))
-}
-
-.focus\:bg-green-400:focus{
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity))
 }
 
 .focus\:ring-2:focus{
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
-}
-
-.active\:border-button:active{
-  --tw-border-opacity: 1;
-  border-color: rgb(102 252 241 / var(--tw-border-opacity))
-}
-
-.active\:border-green-400:active{
-  --tw-border-opacity: 1;
-  border-color: rgb(74 222 128 / var(--tw-border-opacity))
-}
-
-.focus\:active\:border-button:active:focus{
-  --tw-border-opacity: 1;
-  border-color: rgb(102 252 241 / var(--tw-border-opacity))
 }
 
 @media (min-width: 640px){
@@ -1843,10 +1674,6 @@ video {
 
   .sm\:w-4\/6{
     width: 66.666667%
-  }
-
-  .sm\:w-\[500px\]{
-    width: 500px
   }
 
   .sm\:w-\[600px\]{
