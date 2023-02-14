@@ -157,8 +157,8 @@
   -webkit-background-clip: text;
           background-clip: text;
   font-family: Poppins, sans-serif;
-  font-size: 3.75rem;
-  line-height: 1;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   font-weight: 600;
   text-transform: uppercase;
   color: transparent
@@ -336,6 +336,22 @@
 .blog-button:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(4 28 45 / var(--tw-bg-opacity))
+}
+
+.social-link{
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 34 52 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(102 252 241 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms
 }
 
 /*
@@ -941,14 +957,19 @@ video {
   margin-bottom: 30rem
 }
 
+.my-52{
+  margin-top: 13rem;
+  margin-bottom: 13rem
+}
+
 .my-24{
   margin-top: 6rem;
   margin-bottom: 6rem
 }
 
-.my-52{
-  margin-top: 13rem;
-  margin-bottom: 13rem
+.my-80{
+  margin-top: 20rem;
+  margin-bottom: 20rem
 }
 
 .my-44{
@@ -961,9 +982,9 @@ video {
   margin-bottom: 1rem
 }
 
-.my-72{
-  margin-top: 18rem;
-  margin-bottom: 18rem
+.my-40{
+  margin-top: 10rem;
+  margin-bottom: 10rem
 }
 
 .mt-32{
@@ -978,16 +999,12 @@ video {
   margin-right: 2rem
 }
 
-.mb-52{
-  margin-bottom: 13rem
-}
-
 .mt-6{
   margin-top: 1.5rem
 }
 
-.mb-36{
-  margin-bottom: 9rem
+.mb-40{
+  margin-bottom: 10rem
 }
 
 .mb-20{
@@ -1010,12 +1027,32 @@ video {
   margin-left: 2rem
 }
 
+.mt-80{
+  margin-top: 20rem
+}
+
+.mb-32{
+  margin-bottom: 8rem
+}
+
+.mb-44{
+  margin-bottom: 11rem
+}
+
 .mr-3{
   margin-right: 0.75rem
 }
 
+.mb-8{
+  margin-bottom: 2rem
+}
+
 .mr-auto{
   margin-right: auto
+}
+
+.mb-16{
+  margin-bottom: 4rem
 }
 
 .block{
@@ -1069,6 +1106,10 @@ video {
 
 .h-\[200px\]{
   height: 200px
+}
+
+.h-\[50px\]{
+  height: 50px
 }
 
 .min-h-\[560px\]{
@@ -1156,12 +1197,12 @@ video {
   width: 250px
 }
 
-.w-\[40px\]{
-  width: 40px
+.w-\[30px\]{
+  width: 30px
 }
 
-.w-\[48\%\]{
-  width: 48%
+.min-w-\[30px\]{
+  min-width: 30px
 }
 
 .max-w-\[95rem\]{
@@ -1203,6 +1244,10 @@ video {
 
 .justify-start{
   justify-content: flex-start
+}
+
+.justify-center{
+  justify-content: center
 }
 
 .justify-between{
@@ -1342,6 +1387,11 @@ video {
   background-color: rgb(3 33 53 / var(--tw-bg-opacity))
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity))
+}
+
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops))
 }
@@ -1364,8 +1414,8 @@ video {
   padding: 0.75rem
 }
 
-.p-12{
-  padding: 3rem
+.p-8{
+  padding: 2rem
 }
 
 .p-4{
@@ -1392,11 +1442,6 @@ video {
   padding-right: 2rem
 }
 
-.py-44{
-  padding-top: 11rem;
-  padding-bottom: 11rem
-}
-
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem
@@ -1405,6 +1450,16 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem
 }
 
 .px-4{
@@ -1471,6 +1526,16 @@ video {
   line-height: 2.25rem
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem
+}
+
 .font-extrabold{
   font-weight: 800
 }
@@ -1485,6 +1550,14 @@ video {
 
 .font-normal{
   font-weight: 400
+}
+
+.font-bold{
+  font-weight: 700
+}
+
+.font-light{
+  font-weight: 300
 }
 
 .uppercase{
@@ -1512,6 +1585,10 @@ video {
 .text-background{
   --tw-text-opacity: 1;
   color: rgb(3 23 40 / var(--tw-text-opacity))
+}
+
+.underline{
+  text-decoration-line: underline
 }
 
 .outline-none{
@@ -1640,6 +1717,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity))
 }
 
+.hover\:text-button:hover{
+  --tw-text-opacity: 1;
+  color: rgb(102 252 241 / var(--tw-text-opacity))
+}
+
 .hover\:opacity-50:hover{
   opacity: 0.5
 }
@@ -1653,6 +1735,37 @@ video {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
+}
+
+@media (min-width: 400px){
+  .xsm\:mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem
+  }
+
+  .xsm\:w-\[40px\]{
+    width: 40px
+  }
+
+  .xsm\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+  }
+
+  .xsm\:py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem
+  }
+
+  .xsm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem
+  }
+
+  .xsm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem
+  }
 }
 
 @media (min-width: 640px){
@@ -1680,6 +1793,10 @@ video {
     width: 600px
   }
 
+  .sm\:min-w-\[500px\]{
+    min-width: 500px
+  }
+
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr))
   }
@@ -1700,9 +1817,24 @@ video {
     padding: 2.5rem
   }
 
+  .sm\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1
+  }
+
   .sm\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem
+  }
+
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem
+  }
+
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1
   }
 }
 
@@ -1716,8 +1848,37 @@ video {
     margin-top: 3rem
   }
 
+  .md\:mb-0{
+    margin-bottom: 0px
+  }
+
   .md\:w-4\/5{
     width: 80%
+  }
+
+  .md\:w-3\/5{
+    width: 60%
+  }
+
+  .md\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content
+  }
+
+  .md\:w-\[48\%\]{
+    width: 48%
+  }
+
+  .md\:min-w-\[715px\]{
+    min-width: 715px
+  }
+
+  .md\:flex-row{
+    flex-direction: row
+  }
+
+  .md\:p-12{
+    padding: 3rem
   }
 }
 
@@ -1847,6 +2008,10 @@ video {
     margin-top: 7rem
   }
 
+  .xl\:hidden{
+    display: none
+  }
+
   .xl\:h-\[330px\]{
     height: 330px
   }
@@ -1861,6 +2026,19 @@ video {
 
   .xl\:w-\[350px\]{
     width: 350px
+  }
+
+  .xl\:w-11\/12{
+    width: 91.666667%
+  }
+
+  .xl\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content
+  }
+
+  .xl\:min-w-\[365px\]{
+    min-width: 365px
   }
 
   .xl\:flex-row{
