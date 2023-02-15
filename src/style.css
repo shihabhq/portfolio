@@ -147,6 +147,21 @@
     @apply text-2xl p-5 mx-[2px] text-button rounded-full bg-cardHover transition-all duration-300
 }
 
+.contact-input {
+    @apply px-4 py-3 outline-none border border-background rounded-lg w-full bg-background text-white font-medium font-Opensans text-lg
+}
+
+.contact-input:focus {
+    @apply border-green-400
+}
+
+.contact-button {
+    @apply w-1/3 py-3 text-lg font-Poppins text-background font-semibold bg-button transition-all duration-200 rounded-xl border
+}
+
+.contact-button:hover {
+    transform: translateY(-6px)
+}
 
 @tailwind base;
 @tailwind components;
