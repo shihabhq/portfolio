@@ -18,9 +18,10 @@
         <button class="anav-button" onclick="window.location.href='#about';">About</button>
         <button class="anav-button" onclick="window.location.href='#skills'">Skills</button>
         <button class="anav-button" onclick="window.location.href='#blog'">Blog</button>
+
         <button class="anav-button" onclick="window.location.href='#portfolio'">Portfolio</button>
-        <button
-            class="anav-button hover:-translate-y-0 bg-gradient-to-r from-green-400 to-blue-500  hover:opacity-50 hover:text-background">Resume</button>
+        <a href="/imgs/Adnan Saim.pdf" download
+            class="anav-button hover:-translate-y-0 bg-gradient-to-r from-green-400 to-blue-500 capitalize  hover:opacity-50 hover:text-background">Resume</a>
     </nav>
 
     <div class="hamburger mdl:hidden">
@@ -38,8 +39,10 @@
             class="side-button  hover:bg-button hover:text-background">Blog</button>
         <button class="side-button  hover:bg-button hover:text-background"
             onclick="window.location.href='#portfolio'">portfolio</button>
+
         <button href="#cv"
-            class="side-button bg-gradient-to-r from-green-400 to-blue-500  hover:opacity-50 hover:text-background">Resume</button>
+            class="side-button bg-gradient-to-r from-green-400 to-blue-500  hover:opacity-50 hover:text-background"><a
+                href="/imgs/Adnan Saim.pdf" download>Resume</a></button>
     </div>
     <nav class="flex w-[93%] xl:w-4/5 mx-auto h-28 justify-between items-center animate__animated animate__fadeIn">
         <div class="font-sans text-4xl cursor-pointer font-extrabold " onclick="window.location.reload()">
@@ -53,8 +56,8 @@
                 class="nav-button  hover:-translate-y-[6px] hover:bg-button hover:text-background">Blogs</button>
             <button class=" nav-button hover:-translate-y-[6px] hover:bg-button hover:text-background"
                 onclick="window.location.href='#portfolio'">Projects</button>
-            <button href="#cv"
-                class="nav-button bg-gradient-to-r from-green-400 to-blue-500  hover:opacity-50 hover:text-background">Resume</button>
+            <a href="/imgs/Adnan Saim.pdf" download
+                class="nav-button bg-gradient-to-r from-green-400 to-blue-500  hover:opacity-50 hover:text-background cursor-pointer">Resume</a>
         </div>
     </nav>
     <section class="hero w-full h-[90vh] relative min-h-[560px]" id="home">
@@ -85,8 +88,12 @@
                 <h1 class="font-Poppins font-semibold text-5xl xl:text-7xl text-white">I'm Adnan Saim</h1>
                 <h2 class="text-white text-3xl xl:text-4xl">I am a <span class="auto-text text-button"></span></h2>
                 <div class="font-Poppins text-2xl">
-                    <button class="hero-button hover:bg-green-400 hover:-translate-y-2">Contact me</button>
-                    <button class="hero-button hover:bg-green-400 hover:-translate-y-2">Hire me</button>
+                    <button class="hero-button hover:bg-green-400 hover:-translate-y-2" id="contact-button">Contact
+                        me</button>
+                    <a href="https://www.fiverr.com/adnan_saim" target="_blank"><button
+                            class="hero-button hover:bg-green-400 hover:-translate-y-2" id="contact-button">Hire
+                            me</button></a>
+
                 </div>
                 <div class="space-x-8">
                     <a href="https://twitter.com/adnansdev" target="_blank">
@@ -109,6 +116,25 @@
                     class="w-[600px] transition-all duration-[3s] translate-y-6 transform animatehero" alt="">
             </div>
         </div>
+    </section>
+
+    <section id="contactdiv" class="h-screen z-50 flex items-center justify-center fixed top-0 w-0 opacity-0">
+        <div id="contact_blur-div" class="w-full h-full bg-[rgb(0,0,0,.5)] blur-3xl absolute top-0 right-0">
+        </div>
+
+        <form action="https://formsubmit.co/438ce5424609b476640040eedfa690ea" method="POST"
+            class="bg-cardHover px-6 py-12 rounded-2xl w-[400px] h-[450px] space-y-4 relative transition-all duration-300">
+            <span><i class="fa-solid fa-xmark absolute right-5 text-2xl top-5 cursor-pointer transition-all duration-200 hover:text-[rgb(255,255,255,.8)]"
+                    id="contact-close"></i></span>
+            <input type="text" name="name" placeholder="Name" class="contact-input">
+            <input type="email" name="email" placeholder="Email" class="contact-input">
+            <textarea name="message" id="" class="contact-input h-[150px]" placeholder="Message"></textarea>
+            <div class="flex justify-center">
+                <button class="contact-button bg-button border-button hover:bg-inherit hover:text-white"
+                    type="submit">Send</button>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+        </form>
     </section>
     <section class="w-full h-screen my-[30rem] mdl:my-24 mdl:py-32 min-h-[775px]" id="about">
         <h1 class="block mdl:hidden section-heading mb-10 text-center">About me</h1>
@@ -139,7 +165,8 @@
                     <div
                         class="bottom-0 slide transition-right duration-500 -right-full w-full h-full bg-button absolute">
                     </div>
-                    <a class="relative mr-8 text-xl font-semibold transition-all">Download CV</a>
+                    <a href="/imgs/Adnan Saim.pdf" download
+                        class="relative mr-8 text-xl font-semibold transition-all">Download CV</a>
                     <i class="fa-solid fa-download absolute right-0 px-5 py-5 bottom-1/2 rounded-full
                     bg-button"></i>
                 </button>
@@ -473,17 +500,7 @@
                 Saim</a></h1>
     </section>
 
-    <!-- <section id="contactdiv" class="w-full h-screen z-50 bg-[rgba(0,0,0,.5)] flex items-center justify-center">
-        <form action="" class="bg-cardHover px-6 py-12 rounded-2xl w-[400px] h-[450px] space-y-4">
-            <input type="text" name="name" placeholder="Name" class="contact-input">
-            <input type="email" name="name" placeholder="Email" class="contact-input">
-            <textarea name="" id="" class="contact-input h-[150px]" placeholder="Message"></textarea>
-            <div class="flex justify-center">
-                <button class="contact-button bg-button border-button hover:bg-inherit hover:text-white"
-                    type="submit">Send</button>
-            </div>
-        </form>
-    </section> -->
+
 
 
 

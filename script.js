@@ -70,4 +70,32 @@ contactEmail = document.getElementById('contact-email')
 contactMsg = document.getElementById('contact-message')
 
 
+//contact buttons
+const contactBtn = document.getElementById('contact-button');
+contactDiv = document.getElementById('contactdiv');
+contactDivCross = document.getElementById('contact-close');
+contactBlurDiv = document.getElementById('contact_blur-div');
 
+function showContactDiv() {
+    contactDiv.classList.replace("w-0", "w-full")
+    contactDiv.classList.replace("opacity-0", "opacity-100")
+}
+
+function cutContact() {
+    contactDiv.classList.replace("w-full", "w-0")
+    contactDiv.classList.replace("opacity-100", "opacity-0")
+}
+
+contactBtn.addEventListener('click', function () {
+    showContactDiv()
+})
+
+
+
+contactDivCross.addEventListener('click', function () {
+    cutContact()
+})
+
+contactBlurDiv.addEventListener('click', function () {
+    cutContact()
+})
