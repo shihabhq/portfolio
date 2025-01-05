@@ -1,5 +1,5 @@
 let frontend = "Frontend Developer";
-freelancer = "Freelancer";
+freelancer = "React Developer";
 blogger = "Blogger";
 
 const typed = new Typed(".auto-text", {
